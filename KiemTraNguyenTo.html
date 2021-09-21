@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise</title>
+</head>
+<body>
+<script>
+    for (j=0; j<10000; j++){
+        if (isPrime(j) == true) document.write(j + "; ");
+    }
+    function isPrime(number) {
+        if (number < 2) {
+            return false;
+        } else {
+            for (i = 2; i <= Math.sqrt(number); i++) {
+                if (number % i === 0) {
+                    return false;
+                    break;
+                }
+            }
+            return true;
+        }
+    }
+
+</script>
+</body>
+</html>

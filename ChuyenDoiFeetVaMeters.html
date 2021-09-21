@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise</title>
+    <style>
+        table{
+            table-layout: fixed;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Feet</th>
+        <th>Meters</th>
+        <th>Meters</th>
+        <th>Feet</th>
+    </tr>
+    <tr>
+        <td><input type="text" oninput="footToMeter(this.value)"></td>
+        <td><span id="outputMeters"></span></td>
+        <td><input type="text" oninput="meterToFoot(this.value)">/td>
+        <td><span id="outputFoot"></span></td>
+    </tr>
+</table>
+</body>
+</html>
