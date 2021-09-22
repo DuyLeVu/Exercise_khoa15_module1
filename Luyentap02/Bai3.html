@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt('Nhap vao 1 so nguyen bat ky '));
+    document.write(n + "!=" + tinhGiaiThua(n));
+    function tinhGiaiThua(n){
+        if (n ==1) return 1;
+        return  n * (tinhGiaiThua(n-1));
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise</title>
+</head>
+<body>
+<script>
+    let n = prompt('Nhap vao 1 so nguyen bat ky ');
+    if (checknumber(n) == true) document.write(n + " la ky tu so");
+    else document.write(n + " Khong phai ky tu so");
+
+    function checknumber(n) {
+        if (isNaN(n) == true) return false;
+        else return true;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise</title>
+  <script>
+    function calCircle(radius){
+        let acreage = radius ** 2 * Math.PI;
+        let perimeter = 2* radius * Math.PI;
+        alert('Chu vi hinh tron=' +perimeter);
+        alert('Dien tich hinh tron=' +acreage);
+    }
+  </script>
+</head>
+<body>
+<script>
+    let r = parseFloat(prompt('Nhap vao ban kinh hinh tron: '));
+    calCircle(r);
+</script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ung Dung Quan Ly</title>
+    <style>
+        form {
+
+            width: 30%;
+            text-align: left;
+            padding: 30px 30px;
+            background-color: #F2F2F2;
+        }
+
+        form input {
+            width: 70%;
+            height: 30px;
+        }
+
+        .btn {
+            text-align: center;
+            width: 60px;
+            background-color: #50AF50;
+            color: white;
+            padding: 5px 10px;
+            margin: 0 5px;
+            border: 1px solid #50AF50;
+            border-radius: 4px;
+
+        }
+
+        table {
+            /*border: 1px solid black;*/
+            width: 50%;
+            border-collapse: collapse;
+        }
+
+        tr:nth-child(even) {
+            background-color: #F2F2F2;
+        }
+
+        tr, td {
+            /*border: 1px solid black;*/
+            padding: 5px 15px;
+        }
+
+        .product {
+            width: 50%;
+        }
+
+        .edit_input {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>Add New Product</h1>
+<form action="">
+    <input type="text" id="productInput" placeholder="New Product">
+    <input class="btn" type="button" id="btnAdd" onclick="productAdd()" value="Add">
+</form>
+<h2>Display All Product</h2>
+<b>Product Name</b>
+<p id="output"></p>
+<p id="outputEdit"></p>
+<script src="script.js"></script>
+
+</select>
+</body>
+</html>

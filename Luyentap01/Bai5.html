@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise</title>
+    <script>
+        let arrStar = ['Polaris', 'Aldebaran', 'Deneb' , 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+        let arrConstelation = ['Ursa Minor', 'Taurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+        function check(str){
+            let flag = false;
+            for (i=0; i< arrStar.length; i++){
+                if (arrStar[i] === str) {
+                    document.write('Ten chom sao tuong ung: ' + arrConstelation[i]);
+                    flag = true;
+                    break;
+                }
+                else flag = false;
+            }
+            if (flag === false) alert('Khong tim thay ngoi sao nao');
+        }
+    </script>
+</head>
+<body>
+<script>
+    let str=prompt('Nhap vao ten 1 ngoi sao: ');
+    check(str);
+</script>
+</body>
+</html>

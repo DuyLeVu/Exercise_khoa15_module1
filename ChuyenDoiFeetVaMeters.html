@@ -7,6 +7,9 @@
         table{
             table-layout: fixed;
         }
+        th, td{
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
@@ -19,10 +22,22 @@
     </tr>
     <tr>
         <td><input type="text" oninput="footToMeter(this.value)"></td>
-        <td><span id="outputMeters"></span></td>
-        <td><input type="text" oninput="meterToFoot(this.value)">/td>
+        <td><span id="outputMeter"></span></td>
+        <td><input type="text" oninput="meterToFoot(this.value)"></td>
         <td><span id="outputFoot"></span></td>
     </tr>
 </table>
+<script>
+    function footToMeter(foot){
+        let valueFoot = parseFloat(foot);
+        let valueMeter = valueFoot * 0.305
+        document.getElementById('outputMeter').innerHTML = valueMeter;
+    }
+    function meterToFoot(meter){
+        let valueMeter = parseFloat(meter);
+        let valueFoot = valueMeter * 3.279
+        document.getElementById('outputFoot').innerHTML = valueFoot;
+    }
+</script>
 </body>
 </html>
