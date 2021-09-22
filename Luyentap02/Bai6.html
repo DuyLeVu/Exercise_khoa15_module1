@@ -5,6 +5,14 @@
     <title>Exercise</title>
 </head>
 <body>
-
+<script>
+    let number = parseInt(prompt('Nhap vao 1 so nguyen bat ky '));
+    if (checkNumber(number) == true) alert('Day la so nguyen duong');
+        else alert('Day khong phai la so nguyen duong');
+    function checkNumber(n){
+      if (n<=0) return false;
+        else return true;
+    }
+</script>
 </body>
 </html>
