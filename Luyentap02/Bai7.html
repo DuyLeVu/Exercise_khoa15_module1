@@ -5,6 +5,16 @@
     <title>Exercise</title>
 </head>
 <body>
-
+<script>
+let numberA = parseInt(prompt('Nhap vao 1 so nguyen thu nhat '));
+let numberB = parseInt(prompt('Nhap vao 1 so nguyen thu hai '));
+swap(numberA,numberB)
+function  swap(a,b){
+    let temp = a;
+    a = b;
+    b = temp;
+    alert('Hai so sau khi doi ' + a + ' Va ' + b);
+}
+</script>
 </body>
 </html>

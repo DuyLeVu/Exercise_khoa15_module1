@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise</title>
+</head>
+<body>
+<script>
+    let arrayNum = [];
+    let num = parseInt(prompt('Nhap vao so phan tu cua mang: '));
+    for (i=0; i<num; i++){
+        arrayNum[i] = parseInt(prompt('Nhap vao so phan tu thu ' +i + ' cua mang: '));
+    }
+    document.write('Mang sau khi dao nguoc: ' + swapArray(arrayNum));
+    function swapArray(array){
+        array.reverse();
+        return array;
+    }
+</script>
+</body>
+</html>

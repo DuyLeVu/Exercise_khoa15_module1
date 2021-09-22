@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise</title>
+</head>
+<body>
+<script>
+    function check(array, char){
+        let flag = false;
+        let count = 0;
+        for (let i=0; i<array.length; i++){
+            if (array[i] === char) {
+                flag = true;
+                 ++count;
+            }
+        }
+        if (flag == true) alert('Co ' + count + ' Lan' +char + ' xuat hien trong mang');
+        else alert('-1');
+    }
+    let newArray = [];
+    let num = parseInt(prompt('Nhap vao so phan tu cua mang: '));
+    for (let i=0; i<num; i++){
+        newArray[i] = prompt('Nhap vao phan tu thu ' +i + ' cua mang: ');
+    }
+    let char = prompt('Nhap vao ky tu can kiem tra cua mang: ');
+    check(newArray,char);
+
+</script>
+
+</body>
+</html>
