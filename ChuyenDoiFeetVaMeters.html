@@ -29,14 +29,14 @@
 </table>
 <script>
     function footToMeter(foot){
-        let valueFoot = parseFloat(foot);
-        let valueMeter = valueFoot * 0.305
-        document.getElementById('outputMeter').innerHTML = valueMeter;
+        let footValue = parseFloat(foot);
+        let meterValue = footValue * 0.305
+        document.getElementById('outputMeter').innerHTML = meterValue;
     }
     function meterToFoot(meter){
-        let valueMeter = parseFloat(meter);
-        let valueFoot = valueMeter * 3.279
-        document.getElementById('outputFoot').innerHTML = valueFoot;
+        let meterValue = parseFloat(meter);
+        let footValue = meterValue * 3.279;
+        document.getElementById('outputFoot').innerHTML = footValue;
     }
 </script>
 </body>
